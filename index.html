@@ -1,5 +1,6 @@
 # Selaire.github.io.index.html
-html = """<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="ja">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8">
@@ -20,9 +21,803 @@ html = """<!DOCTYPE html>
     <meta name="twitter:description" content="幸せなお伽話のようにできなくても。それでも、いつか大好きな物語に。">
     <meta name="twitter:image:src" content="https://mahoyaku.com/3rd/shared/img/common/og-image.png">
     <link rel="icon" href="./favicon.ico">
+    <!-- Adobe Fonts-->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'nzu4dql',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+
+    </script>
+    <!-- CSS Setting-->
+    <link rel="stylesheet" href="./shared/css/base.css?v=6.01">
+    <link rel="stylesheet" href="./shared/css/top.css?v=7.01">
+    <!-- Google tag (gtag.js)-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X443R73N4Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-X443R73N4Q');
+
+    </script>
   </head>
   <body>
-  </body>
-</html>"""
+    <div id="pagetop"></div>
+    <div id="blind"></div>
+    <!-- \(☆ﾟ ☆∴｡·*  [ LOADER ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+    <div id="loader" class="loader">
+      <div class="loader__inner">
+        <p class="loader__per"><span id="perNum" class="per--num">0</span>
+        </p>
+      </div>
+    </div>
+    <!-- \(☆ﾟ ☆∴｡·*  [ HEADER ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+    <header id="header" class="header">
+      <div class="header__inner">
+        <div class="header__menu">
+          <div class="header__menu__inner">
+            <p class="header__menu__ham"><a href="#"><span class="ham--open"><img src="./shared/img/common/menu_icon_open.png" width="48" height="36" alt=""></span><span class="ham--close"><img src="./shared/img/common/menu_icon_close.png" width="44" height="44" alt=""></span></a></p>
+            <div class="header__menu__nav">
+              <ul>
+                <li><a href="./" class="insite"><span><img src="./shared/img/common/menu_nav1.png" width="54" height="24" alt="Top"></span></a></li>
+                <li><a href="#modalInfo" data-type="" class="modal--inline"><span><img src="./shared/img/common/menu_nav2.png" width="82" height="22" alt="Game"></span></a></li>
+                <li><a href="#modalInfo" data-type="special" class="modal--inline"><span><img src="./shared/img/common/menu_nav3.png" width="244" height="24" alt="Special Program"></span></a></li>
+                <li><a href="#modalInfo" data-type="twitter" class="modal--inline"><span><img src="./shared/img/common/menu_nav4.png" width="258" height="24" alt="Twitter Campaign"></span></a></li>
+                <li><a href="#modalInfo" data-type="store" class="modal--inline"><span><img src="./shared/img/common/menu_nav5.png" width="81" height="22" alt="Store"></span></a></li>
+              </ul>
+            </div>
+            <div class="header__menu__share">
+              <p class="share--title"><img src="./shared/img/common/menu_share_title.png" width="54" height="13" alt="Share"></p>
+              <ul class="share--list">
+                <li><a href="http://twitter.com/share?text=%E3%80%8E%E5%B9%B8%E3%81%9B%E3%81%AA%E3%81%8A%E4%BC%BD%E8%A9%B1%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E3%80%82%E3%81%9D%E3%82%8C%E3%81%A7%E3%82%82%E3%80%81%E3%81%84%E3%81%A4%E3%81%8B%E5%A4%A7%E5%A5%BD%E3%81%8D%E3%81%AA%E7%89%A9%E8%AA%9E%E3%81%AB%E3%80%82%E3%80%8F%0D%0A%23%E3%81%BE%E3%81%BB%E3%82%84%E3%81%8F3%E5%91%A8%E5%B9%B4%20%E3%82%A4%E3%83%99%E3%83%B3%E3%83%8811%E6%9C%8818%E6%97%A5%E3%82%88%E3%82%8A%E9%96%8B%E5%82%AC%EF%BC%81%0D%0A%E6%9C%80%E5%A4%A7165%E9%80%A3%E7%84%A1%E6%96%99%E3%82%AC%E3%83%81%E3%83%A3%26%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E5%85%A8%E8%A9%B1%E7%84%A1%E6%96%99%E9%96%8B%E6%94%BE%E4%B8%AD%EF%BC%81%0D%0A&url=https://mahoyaku.com/3rd/" onclick="window.open(this.href,'tw_window', 'screenX='+(screen.width - 600) / 2+',screenY='+(screen.height - 500) / 2+',width=600, height=300, menubar=no, toolbar=no, scrollbars=yes');return false;"><img src="./shared/img/common/menu_share_tw.png" width="30" height="26" alt="Twitter"></a></li>
+                <li><a href="//line.naver.jp/R/msg/text/?%E3%80%8E%E5%B9%B8%E3%81%9B%E3%81%AA%E3%81%8A%E4%BC%BD%E8%A9%B1%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%A6%E3%82%82%E3%80%82%E3%81%9D%E3%82%8C%E3%81%A7%E3%82%82%E3%80%81%E3%81%84%E3%81%A4%E3%81%8B%E5%A4%A7%E5%A5%BD%E3%81%8D%E3%81%AA%E7%89%A9%E8%AA%9E%E3%81%AB%E3%80%82%E3%80%8F%0D%0A%23%E3%81%BE%E3%81%BB%E3%82%84%E3%81%8F3%E5%91%A8%E5%B9%B4%20%E3%82%A4%E3%83%99%E3%83%B3%E3%83%8811%E6%9C%8818%E6%97%A5%E3%82%88%E3%82%8A%E9%96%8B%E5%82%AC%EF%BC%81%0D%0A%E6%9C%80%E5%A4%A7165%E9%80%A3%E7%84%A1%E6%96%99%E3%82%AC%E3%83%81%E3%83%A3%26%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E5%85%A8%E8%A9%B1%E7%84%A1%E6%96%99%E9%96%8B%E6%94%BE%E4%B8%AD%EF%BC%81%0D%0A%20https://mahoyaku.com/3rd/" onclick="window.open(this.href,'tw_window', 'screenX='+(screen.width - 800) / 2+',screenY='+(screen.height - 600) / 2+',width=800, height=600, menubar=no, toolbar=no, scrollbars=yes');return false;"><img src="./shared/img/common/menu_share_line.png" width="30" height="26" alt="LINE"></a></li>
+                <li><a href="http://www.facebook.com/sharer.php?u=https://mahoyaku.com/3rd/" onclick="window.open(this.href,'tw_window', 'screenX='+(screen.width - 800) / 2+',screenY='+(screen.height - 400) / 2+',width=800, height=400, menubar=no, toolbar=no, scrollbars=yes');return false;"><img src="./shared/img/common/menu_share_fb.png" width="30" height="26" alt="facebook"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- \(☆ﾟ ☆∴｡·*  [ CONTENT ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+    <article id="top-page" class="container">
+      <!-- \(☆ﾟ ☆∴｡·*  [ MAIN ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+      <section id="main" class="main">
+        <div class="main__inner">
+          <h1 class="main__title">
+            <picture>
+              <source srcset="./shared/img/top/main_title_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_title.png" width="689" height="294" alt="Promise of Wizard -3rd anniversary-">
+            </picture>
+          </h1>
+          <div class="main__book book--close is--current">
+            <p class="ann--fuwaCard"><span><i><img src="./shared/img/top/main_book_close.png" width="299" height="291" alt=""></i></span></p>
+          </div>
+          <div class="main__book book--open">
+            <p class="ann--fuwaCard2"><span><i><img src="./shared/img/top/main_book_open.png" width="277" height="351" alt=""></i></span></p>
+          </div>
+          <p class="main__scroll"><span>Scroll</span></p>
+          <div id="mainConfetti1" class="main__confetti1">
+            <p><span class="confetti--lt"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz1_lt_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz1_lt.png" width="643" height="490" alt="">
+                  </picture></span></span><span class="confetti--rt"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz1_rt_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz1_rt.png" width="648" height="434" alt="">
+                  </picture></span></span><span class="confetti--lb"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz1_lb_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz1_lb.png" width="405" height="629" alt="">
+                  </picture></span></span><span class="confetti--rb"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz1_rb_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz1_rb.png" width="494" height="582" alt="">
+                  </picture></span></span></p>
+          </div>
+          <div id="mainConfetti2" class="main__confetti2">
+            <p><span class="confetti--lt"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz2_lt_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz2_lt.png" width="707" height="540" alt="">
+                  </picture></span></span><span class="confetti--rt"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz2_rt_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz2_rt.png" width="817" height="644" alt="">
+                  </picture></span></span><span class="confetti--lb"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz2_lb_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz2_lb.png" width="630" height="890" alt="">
+                  </picture></span></span><span class="confetti--rb"><span>
+                  <picture>
+                    <source srcset="./shared/img/top/main_blz2_rb_sp.png" media="(max-width: 768px)"><img src="./shared/img/top/main_blz2_rb.png" width="602" height="539" alt="">
+                  </picture></span></span></p>
+          </div>
+        </div>
+      </section>
+      <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+      <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ﾟ｡｡ ･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ ☆∴｡·*･     C  O  U  N  T  R  I  E  S    ☆･ﾟﾟ｡*｡ ☆｡　ﾟ.∴ ☆｡･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+      <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+      <section id="countries" class="countries">
+        <div class="countries__inner">
+          <div class="countries__chara">
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ﾟ｡｡ ･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ ☆∴｡·*･     W  o  r  l  d     o  f     W  i  z  a  r  d  s    ☆･ﾟﾟ｡*｡ ☆｡　ﾟ.∴ ☆｡･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <div class="chara--cloud c--1">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud1.webp"><img src="./shared/img/top/cloud1.png" width="1371" height="821" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--2">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud2.webp"><img src="./shared/img/top/cloud2.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--3">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud3.webp"><img src="./shared/img/top/cloud3.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--4">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud1.webp"><img src="./shared/img/top/cloud1.png" width="1371" height="821" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--5">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud3.webp"><img src="./shared/img/top/cloud3.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--6">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud2.webp"><img src="./shared/img/top/cloud2.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--7">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud1.webp"><img src="./shared/img/top/cloud1.png" width="1371" height="821" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--8">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud3.webp"><img src="./shared/img/top/cloud3.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--9">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud1.webp"><img src="./shared/img/top/cloud1.png" width="1371" height="821" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--10">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud2.webp"><img src="./shared/img/top/cloud2.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--11">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud3.webp"><img src="./shared/img/top/cloud3.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--12">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud1.webp"><img src="./shared/img/top/cloud1.png" width="1371" height="821" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--13">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud2.webp"><img src="./shared/img/top/cloud2.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--14">
+              <p class="ann--cloud2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud3.webp"><img src="./shared/img/top/cloud3.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <div class="chara--cloud c--15">
+              <p class="ann--cloud1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/cloud2.webp"><img src="./shared/img/top/cloud2.png" width="1060" height="894" alt="">
+                  </picture></span></p>
+            </div>
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ☆∴｡　*　ﾟ｡*｡ ﾟ ｡☆ﾟ.･｡*｡｡･｡　★｡ﾟ｡·*･     S o u t h e r n    C o u n t r y    ☆･ﾟ･｡｡･｡　*　*｡ﾟ｡* ﾟ｡*｡ ∴｡*｡ ☆∴｡*｡ ﾟ ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!-- ・｡･ﾟ ☆∴｡　*　｡･･｡･｡.･｡*☆｡･  F i g a r o  ★ *・°☆.。  R u t i l e  . ☆∴｡　･ﾟ.。 *  L e n n o x  ・｡･ﾟ★　･･★  ･  M i t i l e  ｡｡･* ☆∴｡　 ☆ ﾟ｡*｡ ☆ﾟ｡*｡ ﾟ -->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <div class="chara--motif ms">
+              <p><span class="m--bg"><img src="./shared/img/top/m_s_bg.png" width="702" height="724" alt=""></span><span class="m--1"><span><i><img src="./shared/img/top/m_s_1.png" width="52" height="51" alt=""></i></span></span><span class="m--2"><span><i><img src="./shared/img/top/m_s_2.png" width="36" height="42" alt=""></i></span></span><span class="m--3"><span><i><img src="./shared/img/top/m_s_3.png" width="53" height="58" alt=""></i></span></span></p>
+            </div>
+            <p class="chara--dir ms"><img src="./shared/img/top/m_s_dir.png" width="451" height="396" alt=""></p>
+            <p class="chara--vine ms"><img src="./shared/img/top/m_s_vine.png" width="451" height="397" alt=""></p>
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ☆∴｡　*　ﾟ｡*｡ ﾟ ｡☆ﾟ.･｡*｡｡･｡　★｡ﾟ｡·*･     W e s t e r n    C o u n t r y    ☆･ﾟ･｡｡･｡　*　*｡ﾟ｡* ﾟ｡*｡ ∴｡*｡ ☆∴｡*｡ ﾟ ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!-- ・｡･ﾟ ☆∴｡　*　｡･★ ･･｡☆｡･  S h y l o c k  ★ ∴｡　*・°☆.。  M u r r  . ☆*　 ｡･ﾟ.。 *  C h l o e  ・｡･ﾟ｡･｡☆☆ ･  R u s t i c a  ｡｡･* ☆∴｡　 ☆ ｡★　 ☆ﾟ｡*｡ ﾟ -->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <div class="chara--motif mw">
+              <p><span class="m--bg"><img src="./shared/img/top/m_w_bg.png" width="753" height="714" alt=""></span><span class="m--1"><span><img src="./shared/img/top/m_w_1.png" width="111" height="110" alt=""></span></span><span class="m--2"><span><img src="./shared/img/top/m_w_2.png" width="140" height="143" alt=""></span></span><span class="m--3"><span><img src="./shared/img/top/m_w_3.png" width="111" height="110" alt=""></span></span><span class="m--4"><span><img src="./shared/img/top/m_w_4.png" width="154" height="159" alt=""></span></span><span class="m--5"><span><img src="./shared/img/top/m_w_5.png" width="201" height="207" alt=""></span></span></p>
+            </div>
+            <p class="chara--dir mw"><img src="./shared/img/top/m_w_dir.png" width="451" height="396" alt=""></p>
+            <p class="chara--vine mw"><img src="./shared/img/top/m_w_vine.png" width="451" height="397" alt=""></p>
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ☆∴｡　*　ﾟ｡*｡ ﾟ ｡☆ﾟ.･｡*｡｡･｡　★｡ﾟ｡·*･     E a s t e r n    C o u n t r y    ☆･ﾟ･｡｡･｡　*　*｡ﾟ｡* ﾟ｡*｡ ∴｡*｡ ☆∴｡*｡ ﾟ ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!-- ・｡･ﾟ ☆∴｡　*　｡･･｡･｡.･｡*☆｡･  F a u s t  ★ *・°☆.。  S h i n o  . ☆∴｡　･ﾟ.。 *  H e a t h c l i f f  ・｡･ﾟ★　･★  ･  N e r o  ｡｡･* ☆∴｡　 ☆ ﾟ｡*｡ ☆ﾟ｡*｡ ﾟ -->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <div class="chara--motif me">
+              <p><span class="m--bg"><img src="./shared/img/top/m_e_bg.png" width="660" height="671" alt=""></span><span class="m--1"><span><i><img src="./shared/img/top/m_e_1.png" width="159" height="60" alt=""></i></span></span><span class="m--2"><span><i><img src="./shared/img/top/m_e_2.png" width="228" height="41" alt=""></i></span></span><span class="m--3"><span><i><img src="./shared/img/top/m_e_3.png" width="179" height="36" alt=""></i></span></span></p>
+            </div>
+            <p class="chara--dir me"><img src="./shared/img/top/m_e_dir.png" width="451" height="396" alt=""></p>
+            <p class="chara--vine me"><img src="./shared/img/top/m_e_vine.png" width="451" height="397" alt=""></p>
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ☆･｡ ﾟ｡*｡ ﾟ∴｡　*　ﾟ･｡｡･ﾟ｡* ☆･｡ ﾟ·*･     N o r t h e r n    C o u n t r y    ☆･ﾟ･｡｡･｡ ﾟ｡*･｡｡･｡　*　｡*｡ ☆･｡ ﾟ｡*ﾟ｡ ﾟ ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!-- ・｡･ﾟ★｡･｡･  S n o w  ★ *・°☆.。  W h i t e  . ☆∴｡　*　 ｡･ﾟ.。 *  M i t h r a  ・｡･ﾟ★｡･　･★  ･  O w e n  ｡｡･*｡* ☆∴｡　*  B r a d l e y  　ﾟ｡: *｡ ☆ﾟ｡*｡ ﾟ -->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <div class="chara--motif mn">
+              <p><span class="m--bg"><img src="./shared/img/top/m_n_bg.png" width="605" height="748" alt=""></span><span class="m--1"><span><i><img src="./shared/img/top/m_n_1.png" width="74" height="63" alt=""></i></span></span><span class="m--2"><span><i><img src="./shared/img/top/m_n_2.png" width="70" height="81" alt=""></i></span></span><span class="m--3"><span><i><img src="./shared/img/top/m_n_3.png" width="103" height="93" alt=""></i></span></span><span class="m--4"><span><i><img src="./shared/img/top/m_n_4.png" width="69" height="81" alt=""></i></span></span></p>
+            </div>
+            <p class="chara--dir mn"><img src="./shared/img/top/m_n_dir.png" width="451" height="396" alt=""></p>
+            <p class="chara--vine mn"><img src="./shared/img/top/m_n_vine.png" width="451" height="397" alt=""></p>
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ☆∴｡　*　ﾟ｡*｡ ﾟ ｡☆ﾟ.･｡*｡｡･｡　★｡ﾟ｡·*･     C e n t r a l    C o u n t r y    ☆･ﾟ･｡｡･｡　*　*｡ﾟ｡* ﾟ｡*｡ ∴｡*｡ ☆∴｡*｡ ﾟ ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!-- ・｡･ﾟ ☆∴｡　*　｡･★ ･･｡･｡☆｡･  O z  ★ ∴｡　*・°☆.。  A r t h u r  . ☆*　 ｡･ﾟ.。 *  C a i n  ・｡･ﾟ★｡･｡･｡☆ ･  R i q u e t  ｡｡･* ☆∴｡　 ☆ ﾟ｡*｡★　 ☆ﾟ｡*｡ ﾟ -->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <div class="chara--motif mc">
+              <p><span class="m--bg"><img src="./shared/img/top/m_c_bg.png" width="628" height="847" alt=""></span><span class="m--1"><span><i><img src="./shared/img/top/m_c_1.png" width="164" height="177" alt=""></i></span></span><span class="m--2"><span><i><img src="./shared/img/top/m_c_2.png" width="69" height="65" alt=""></i></span></span></p>
+            </div>
+            <p class="chara--dir mc"><img src="./shared/img/top/m_c_dir.png" width="451" height="396" alt=""></p>
+            <p class="chara--vine mc"><img src="./shared/img/top/m_c_vine.png" width="451" height="397" alt=""></p>
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ☆∴｡　* ﾟ｡｡ ･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟﾟﾟﾟ ☆∴｡·*･     W  i  z  a  r  d  s    ☆･ﾟﾟ｡*｡ ☆｡　ﾟ.∴｡　ﾟ｡*｡ ☆∴｡　･｡｡･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+            <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+            <!-- ﾟ｡*｡ ﾟ ｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c01 js-slideIn">
+              <p class="moving--type1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c01.webp"><img src="./shared/img/top/c01.png" width="732" height="1015" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c02 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c02.webp"><img src="./shared/img/top/c02.png" width="753" height="1051" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      T  h  e  r  e  '  s     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene ms1 pos--r js-slideIn">
+              <p><span class="s--ja">些細な喧嘩と、<br>軽い冗談。<br>彼らの日々を<br>ひとつずつ綴る。</span><span class="s--en">Let us weave a tale of gentle <br>jests and frivolous bickering. <br>Of the comings and <br>goings of everyday life. </span><span class="s--bg"><img src="./shared/img/top/m_s_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c03 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c03.webp"><img src="./shared/img/top/c03.png" width="1003" height="895" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      a     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene ms2 pos--r js-slideIn">
+              <p><span class="s--ja">今は何気ない日常が、<br>いつか泣きたいほどの<br>愛惜の記憶になるのだと、<br>みんなが教えてくれた。</span><span class="s--en">As unremarkable as they are, we may find <br>ourselves recalling those bygone memories <br>with tears in our eyes one day. <br>For that is what they taught us.</span><span class="s--bg"><img src="./shared/img/top/m_s_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c04 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c04.webp"><img src="./shared/img/top/c04.png" width="1156" height="1183" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c05 js-slideIn">
+              <p class="moving--type1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c05.webp"><img src="./shared/img/top/c05.png" width="816" height="971" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      m  e  s  s  a  g  e     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene mw1 pos--r js-slideIn">
+              <p><span class="s--ja">悪戯好きで、<br>気まぐれで、情熱的。<br>彼らの魅力は書ききれないけど、<br>精一杯綴ろう。</span><span class="s--en">Let us weave a tale of their antics, full of mischief <br>and whim and passion. Though their abundant <br>charm tests the limits of vocabulary, <br>let us weave this tale nonetheless.</span><span class="s--bg"><img src="./shared/img/top/m_w_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c06 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c06.webp"><img src="./shared/img/top/c06.png" width="996" height="1238" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c07 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c07.webp"><img src="./shared/img/top/c07.png" width="1176" height="1251" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      f  o  r     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene mw2 pos--l js-slideIn">
+              <p><span class="s--ja">痛みさえも<br>宝石みたいに愛おしむ<br>みんなの横顔が、<br>忘れられないから。</span><span class="s--en">Of the unforgettable profiles those <br>who could even yearn for <br>their own agony like prized jewels.</span><span class="s--bg"><img src="./shared/img/top/m_w_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c08 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c08.webp"><img src="./shared/img/top/c08.png" width="902" height="981" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c09 js-slideIn">
+              <p class="moving--type1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c09.webp"><img src="./shared/img/top/c09.png" width="856" height="992" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c10 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c10.webp"><img src="./shared/img/top/c10.png" width="795" height="1141" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c11 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c11.webp"><img src="./shared/img/top/c11.png" width="959" height="997" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      y  o  u     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene me1 pos--r js-slideIn">
+              <p><span class="s--ja">彼らの叫び、彼らの願い。<br>それが誰にも語られない<br>物語だとしても、<br>綴っておきたい。</span><span class="s--en">Let us weave a tale of their <br>cries and their wishes, <br>even if they are loath to <br>do it themselves.</span><span class="s--bg"><img src="./shared/img/top/m_e_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c12 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c12.webp"><img src="./shared/img/top/c12.png" width="959" height="1206" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      f  r  o  m     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene me2 pos--l js-slideIn">
+              <p><span class="s--ja">優しくて孤独なみんなが、<br>ここで不器用に<br>肩を並べていたのだと。</span><span class="s--en">A tale of kind solitude, <br>and clumsy yet <br>earnest communion.</span><span class="s--bg"><img src="./shared/img/top/m_e_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c13 js-slideIn">
+              <p class="moving--type1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c13.webp"><img src="./shared/img/top/c13.png" width="1135" height="1428" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c14 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c14.webp"><img src="./shared/img/top/c14.png" width="732" height="872" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ｡　∴* ﾟ｡｡      t  h  e  m     *｡ ☆∴｡　･-->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene mn1 pos--r js-slideIn">
+              <p><span class="s--ja">統率は取れない、<br>協調もしない。<br>いつだって一筋縄ではいかない<br>みんなを、そのまま綴ろう。</span><span class="s--en">Let us weave a tale of those who are neither leaders <br>nor followers. A tale of those who walk <br>their own path, unfettered by rules <br>and convention, changing for no one. </span><span class="s--bg"><img src="./shared/img/top/m_n_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c15 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c15.webp"><img src="./shared/img/top/c15.png" width="952" height="956" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c16 js-slideIn">
+              <p class="moving--type1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c16.webp"><img src="./shared/img/top/c16.png" width="1131" height="1259" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- * ﾟ｡｡ ･･｡ ﾟ｡*｡ -->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene mn2 pos--r js-slideIn">
+              <p><span class="s--ja">その在り方こそが<br>彼らの誇りなのだと、<br>今はもう知っている。</span><span class="s--en">For that path is paved <br>by their pride. </span><span class="s--bg"><img src="./shared/img/top/m_n_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c17 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c17.webp"><img src="./shared/img/top/c17.png" width="1051" height="1088" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c18 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c18.webp"><img src="./shared/img/top/c18.png" width="896" height="1059" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c19 js-slideIn">
+              <p class="moving--type1"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c19.webp"><img src="./shared/img/top/c19.png" width="1013" height="1288" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- * ﾟ｡｡ ･･｡ ﾟ｡*｡ -->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene mc1 pos--l js-slideIn">
+              <p><span class="s--ja">彼らの貢献は<br>きっと立派な詩になる。<br>だからこそ綴った。<br>悩んで、迷って、傷ついて。</span><span class="s--en">Let us weave a tale of their acts, <br>for they shall make a great tale indeed. <br>A tale of struggles, misgivings, <br>and pain.</span><span class="s--bg"><img src="./shared/img/top/m_c_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c20 js-slideIn">
+              <p class="moving--type2"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c20.webp"><img src="./shared/img/top/c20.png" width="1133" height="1419" alt="">
+                  </picture></span></p>
+            </div>
+            <!-- * ﾟ｡｡ ･･｡ ﾟ｡*｡ -->
+            <div data-eff="copyFadeIn" data-alpha="0" data-delay=".1" class="chara--scene mc2 pos--r js-slideIn">
+              <p><span class="s--ja">それでも顔を上げて<br>笑いあった、<br>友達みたいな<br>みんなの話を。</span><span class="s--en">Of shared smiles and <br>perseverance despite it all. <br>Of friendship-like bonds.</span><span class="s--bg"><img src="./shared/img/top/m_c_message.png" width="604" height="609" alt=""></span></p>
+            </div>
+            <!-- ﾟ.･｡*｡ -->
+            <div data-eff="blurFadeIn" data-alpha="0" data-delay="0" class="chara--box c21 js-slideIn">
+              <p class="moving--type3"><span>
+                  <picture>
+                    <source type="image/webp" srcset="./shared/img/top/c21.webp"><img src="./shared/img/top/c21.png" width="806" height="1315" alt="">
+                  </picture></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+      <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ﾟ｡｡ ･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ ☆∴｡·*･       T h e r e ' s    a    M  E  S  S  A  G  E    f o r    y o u    f r o m    t h e m .       ☆･ﾟﾟ｡*｡ ☆｡　ﾟ.∴ ☆｡･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+      <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+      <section id="copy" class="copy">
+        <div class="copy__inner">
+          <p class="copy__ja"><span>幸せなお伽話のように<br class="sp-only">できなくても。<br>それでも、<br class="sp-only">いつか大好きな物語に。</span></p>
+          <p class="copy__en"><span>Even fairy tales without happy endings can <br class="sp-only">one day be cherished all the same.</span></p>
+          <p class="copy__cover"><img src="./shared/img/top/copy_overlay.png" width="967" height="703" alt=""></p>
+          <p class="copy__bg">
+            <picture>
+              <source srcset="./shared/img/top/copy_bg_sp.jpg" media="(max-width: 768px)">
+              <source type="image/webp" srcset="./shared/img/top/copy_bg.webp"><img src="./shared/img/top/copy_bg.jpg" width="1368" height="1410" alt="">
+            </picture>
+          </p>
+        </div>
+      </section>
+      <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+      <!-- ☆･ﾟ･｡｡･*･｡ ﾟ｡*｡ ﾟ｡｡ ･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ ☆∴｡·*･       A  L  L    W  I  Z  A  R  D  S       ☆･ﾟﾟ｡*｡ ☆｡　ﾟ.∴ ☆｡･･｡ ﾟ｡*｡ ﾟ｡* ｡☆ﾟ.★｡･｡｡　 ･｡　-->
+      <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+      <section id="visual" class="visual">
+        <div class="visual__inner">
+          <p class="visual__image">
+            <picture>
+              <source type="image/webp" srcset="./shared/img/top/visual.webp"><img src="./shared/img/top/visual.jpg" width="100%" alt="">
+            </picture>
+          </p>
+          <p class="visual__back"><a href="./" class="insite"><img src="./shared/img/top/btn_back.png" width="85" height="85" alt=""></a></p>
+        </div>
+      </section>
+      <div data-eff="fade" data-alpha="0" data-delay="0" class="js-slideIn"></div>
+    </article>
+    <!-- \(☆ﾟ ☆∴｡·*  [ FOOTER ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+    <footer id="footer" class="footer">
+      <div class="footer__inner">
+        <div class="footer__mahoyaku">
+          <p class="mahoyaku--logo"><a href="https://mahoyaku.com/" target="_blank"><img src="./shared/img/common/ft_logo_mahoyaku.png" width="268" height="127" alt=""></a></p>
+          <div class="mahoyaku--desc">
+            <p class="mahoyaku--desc__text"><span class="pc-only">
+                タイトル ： 魔法使いの約束 ／ ジャンル ： 魔法使いと心を繋ぐ育成ゲーム<br>
+                価格 ： 基本無料（一部アプリ内課金あり) ／ プラットフォーム ： iOS / Android<br>
+                シナリオライター ： 都志見文太 ／ キャラクターデザイン原案 ： ダンミル</span><span class="sp-only">タイトル ： 魔法使いの約束 ／ ジャンル ： 魔法使いと心を繋ぐ育成ゲーム ／ 価格 ： 基本無料（一部アプリ内課金あり) ／ プラットフォーム ： iOS / Android ／ シナリオライター ： 都志見文太 ／ キャラクターデザイン原案 ： ダンミル</span></p>
+            <ul class="mahoyaku--desc__badge">
+              <li><a href="https://itunes.apple.com/jp/app/id1481949790" target="_blank"><img src="./shared/img/common/ft_badge_ios.png" width="151" height="45" alt=""></a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.colyinc.mahoyaku" target="_blank"><img src="./shared/img/common/ft_badge_and.png" width="150" height="45" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__coly">
+          <ul class="coly--links">
+            <li><a href="http://colyinc.com/contact/privacy.html" target="_blank">プライバシーポリシー</a></li>
+            <li><a href="http://colyinc.com/guideline/index.html" target="_blank">規約</a></li>
+            <li><a href="http://colyinc.com/contact/" target="_blank">お問い合わせ</a></li>
+          </ul>
+          <p class="coly--rights">当社コンテンツ利用ガイドラインの条件を満たさない文章・画像等の<br class="pc-only">内容の無断転載及び配布等は禁止しております。©coly</p>
+          <p class="coly--logo"><a href="http://colyinc.com/" target="_blank"><img src="./shared/img/common/ft_logo_coly.png" width="97" height="28" alt=""></a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- \(☆ﾟ ☆∴｡·*  [ MODAL ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+    <div id="modal">
+      <div class="modal__inner">
+        <p class="modal__vineL"></p>
+        <p class="modal__vineR"></p>
+        <div class="modal__block">
+          <div class="modal__closeBg"></div>
+          <p class="modal__button--close"><a href="#" class="modal--close"><span><img src="./shared/img/modal/info_btn_close.png" width="176" height="153" alt=""></span></a></p>
+          <!-- \(☆ﾟ ☆∴｡·*  [ MODAL - INFORMATION ]  ･｡ ﾟ｡*｡ ﾟ｡*)/-->
+          <div id="modalInfo" class="modal__info">
+            <div class="modal__info__inner">
+              <!-- *_*-*_*-*_*-->
+              <div id="game" class="modal__info__game module--frame">
+                <div class="module--frame__inner">
+                  <p class="module--title"><img src="./shared/img/modal/info_game_head.png" width="137" height="36" alt=""></p>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 1</span></p>
+                  <p class="module--headline"><span>カード情報</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign1.png" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      3周年カード専用モーション、ホームボイス付21種の新規SSRカードが、<br class="pc-only">
+                      今年はキラキラと輝くエフェクトカードとして登場します！<br>
+                      <br>
+                      さらに、覚醒キャラ【幻装の魔法使い】が21種追加！<br>
+                      特効覚醒キャラ【幻装の魔法使い】は、獲得イベントポイントと厄災に対するダメージがアップ！<br>
+                      3周年SSRカードをパーティに編成すると、特効覚醒キャラが作りやすくなりますよ！
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 2</span></p>
+                  <p class="module--headline"><span>イベント情報</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign2.jpg" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      3rd Anniversary どうかあなたに、虹の物語を<br>
+                      【 開催期間：11/18 (金) 13:00 〜 11/30 (水) 12:59 】<br>
+                      <br>
+                      ＜イベントストーリー前編＞　11/18 (金) 13:00 〜 公開<br>
+                      ＜イベントストーリー中編＞　11/22 (火) 13:00 〜 公開<br>
+                      ＜イベントストーリー後編＞　11/26 (土) 13:00 〜 公開
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 3</span></p>
+                  <p class="module--headline"><span>無料ガチャ情報</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign3.jpg" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 開催期間：11/16 (水) 13:00 〜 11/30 (水) 12:59 】<br>
+                      期間中、最大165連無料！<br>
+                      ・3rd Anniversary記念ガチャ<br>
+                      <br>
+                      【 開催期間：11/26 (土) 00:00 〜 11/26 (土) 23:59 】<br>
+                      ・当日限定！3rd Anniversary記念ガチャ<br>
+                      ※周年当日のみ3周年カードがラインナップに追加されます！
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 4</span></p>
+                  <p class="module--headline"><span>ガチャ情報</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign4.png" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 開催期間：11/16 (水) 13:00 〜 11/30 (水) 12:59 】<br>
+                      ・3rd Anniversary 国別ピックアップガチャ<br>
+                      ・有償限定3rd Anniversary 国別PUステップアップガチャ<br>
+                      ・3rd Anniversaryステップアップガチャ<br>
+                      ステップアップ報酬には新アイテム「奇跡の招待状」が登場！<br>
+                      「奇跡の招待状」を使用して、抽選された5枚のカードから<br>
+                      お好きなカードを1枚選んで獲得することができます♪<br>
+                      <br>
+                      【 開催期間：11/18 (金) 13:00 〜 12/1 (木) 12:59 】<br>
+                      ・3rd Anniversary 季節イベントチケットガチャ<br>
+                      ・3rd Anniversary イベントチケットガチャ<br>
+                      イベント報酬でプレイできるガチャです。<br>
+                      <br>
+                      【 開催期間：11/16 (水) 13:00 〜 11/30 (水) 12:59 】<br>
+                      ・復刻 2nd Anniversary 繋いだ絆は魔法のようにガチャ<br>
+                      ・有償限定 復刻 2nd Anniversary 繋いだ絆は魔法のようにステップアップガチャ<br>
+                      ・魔法使いパーティ<br>
+                      新たに1st Anniversaryカードがまほパラインナップに追加！<br>
+                      <br>
+                      ※排出カード、その他詳細はゲーム内をご確認ください。
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 5</span></p>
+                  <p class="module--headline"><span>育成アップデート情報</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign5-1.jpg" width="100%" alt=""></span></p>
+                    <p class="module--box__image"><span><img src="./uploads/campaign5-2.jpg" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 実装日時：11/15 (火) 18:00 〜 】<br>
+                      育成準備画面がリニューアルして、おすすめスポットを案内してくれる機能も新登場！<br>
+                      <br>
+                      【 実装日時：11/16 (水) 13:00 〜 】<br>
+                      育成可能なパラメータの上限が999から1200にアップデートされます！<br>
+                      <br>
+                      パラメータの引き上げに伴い、以下の新機能が追加となります<br>
+                      ・「勲章」機能追加<br>
+                      特定の条件を満たして育成を完了したとき、覚醒キャラが「勲章」を獲得します。<br>
+                      <br>
+                      ・成長上限アップアイテム「精霊花」追加<br>
+                      覚醒キャラの成長上限を引き上げるアイテム「精霊花」を追加します。<br>
+                      <br>
+                      【 実装日時：11/18 (金) 13:00 〜 】<br>
+                      新しい恒常育成スポットとして「魔法舎中庭」が登場！<br>
+                      <br>
+                      ※詳細については、ゲーム内お知らせをご確認ください。
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 6</span></p>
+                  <p class="module--headline"><span>豪華ログインボーナス</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign6.jpg" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 開催期間：11/17 (木) 0:00 〜 11/26 (土) 23:59 】<br>
+                      <br>
+                      11/17より、「3rd Anniversaryカウントダウンログインボーナス」を実施！<br>
+                      <br>
+                      1日目：白の精霊花1個、マナ石（無償）10個、長夜の雫1個<br>
+                      2日目：赤の精霊花1個、マナ石（無償）10個<br>
+                      3日目：緑の精霊花1個、マナ石（無償）10個<br>
+                      4日目：青の精霊花1個、マナ石（無償）15個<br>
+                      5日目：紫の精霊花1個、ボイス開放チケット3枚、マナ石（無償）15個<br>
+                      6日目：ボイス開放チケット3枚、マナ石（無償）30個<br>
+                      7日目：ボイス開放チケット3枚、マナ石（無償）30個<br>
+                      8日目：ボイス開放チケット3枚、マナ石（無償）30個<br>
+                      9日目：ボイス開放チケット3枚、マナ石（無償）50個<br>
+                      10日目：SR以上確定ガチャチケット1枚、マナ石（無償）100個、結晶パウダー(大)3個<br>
+                      <br>
+                      ※詳細については、ゲーム内お知らせをご確認ください。
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 7</span></p>
+                  <p class="module--headline"><span>限定スペシャル<br class="sp-only">アイテムショップ開催</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign7.jpg" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 開催期間：11/18 (金) 13:00 〜 11/30 (水) 12:59 】<br>
+                      3周年限定の背景や称号、過去に登場した背景や称号を獲得することができます。<br>
+                      育成と厄災討伐で「祝福のしおり」を集め、限定アイテムを手に入れましょう！
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 8</span></p>
+                  <p class="module--headline"><span>お得な<br class="sp-only">マナ石ショップ情報</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign8-1.png" width="100%" alt=""></span></p>
+                    <p class="module--box__image"><span><img src="./uploads/campaign8-2.png" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 実装日時：11/16 (水) 13:00 〜 】<br>
+                      購入することで一定期間効果を発揮する、「期間限定パス」が新登場！<br>
+                      <br>
+                      【ログインパス】<br>
+                      ・デイリーログインパス（30日間）<br>
+                      購入時に有償66個、以降ログイン時に無償マナ石5個配布×30日<br>
+                      <br>
+                      ・3rd Anniversaryログインパス（7日間）<br>
+                      購入時に有償150個、以降ログイン時に無償マナ石35個配布×7日<br>
+                      <br>
+                      【イベントパス】<br>
+                      イベントパスは開催中のイベント参加に対して有利な効果を発揮します！<br>
+                      <br>
+                      ・プレミアムイベントパス<br>
+                      厄災出現率UP＆イベントpt特効ボーナスUP＆厄災特効ボーナスUP<br>
+                      <br>
+                      ・スタンダードイベントパス<br>
+                      厄災出現率UP＆イベントpt特効ボーナスUP<br>
+                      <br>
+                      ※詳細については、ゲーム内お知らせをご確認ください。
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                  <!-- ***-->
+                  <p class="module--camnum"><span>campaign 9</span></p>
+                  <p class="module--headline is--long"><span>メインストーリー全開放<br class="sp-only">&amp;新米賢者応援CP</span></p>
+                  <div class="module--box">
+                    <p class="module--box__image"><span><img src="./uploads/campaign9-1.jpg" width="100%" alt=""></span></p>
+                    <p class="module--box__image"><span><img src="./uploads/campaign9-2.jpg" width="100%" alt=""></span></p>
+                    <div class="module--box__content">
+                      【 開催期間：11/8 (火) 18:00 〜 12/12 (月) 12:59 】<br>
+                      期間中、メインストーリー第1部と第1.5部を全て読むことができます。<br>
+                      この機会をお見逃しなく！<br>
+                      <br>
+                      <br>
+                      【 実装日時：11/15 (火) 18:00 〜 】<br>
+                      ・ようこそ賢者様♪スタートダッシュガチャ<br>
+                      アプリインストールおよびユーザー登録から4週間に限り、<br>
+                      1回だけプレイできるSSR1枚確定ガチャが追加となります。<br>
+                      <br>
+                      ・ようこそ賢者様♪応援セット<br>
+                      アプリインストールおよびユーザー登録から4週間に限り、<br>
+                      購入ができるお得なセットが登場します。<br>
+                      <br>
+                      <br>
+                      【 開催期間：11/15 (火) 18:00 〜 12/2 (金) 12:59 】<br>
+                      各種経験値アップキャンペーンや育成スポット解放キャンペーンを実施します。<br>
+                      <br>
+                      ※実装日時以降にアプリインストールおよびユーザー登録をしたユーザーが対象です。<br>
+                      ※詳細については、ゲーム内お知らせをご確認ください。
+                    </div>
+                    <p class="module--box__button"><a href="#" data-status="close" class="modal--more">MORE</a></p>
+                  </div>
+                </div>
+              </div>
+              <!-- *_*-*_*-*_*-->
+              <div id="special" class="modal__info__special module--frame">
+                <div class="module--frame__inner">
+                  <p class="module--title size--large">
+                    <picture>
+                      <source srcset="./shared/img/modal/info_game_special_sp.png" media="(max-width: 768px)"><img src="./shared/img/modal/info_game_special.png" width="376" height="36" alt="">
+                    </picture>
+                  </p>
+                  <!-- ***-->
+                  <div class="module--box">
+                    <p class="module--box__image"><span><a href="https://youtu.be/PLU6csHPCV0" target="_blank"><img src="./uploads/special1.jpg" width="100%" alt=""></a></span></p>
+                    <p class="module--box__lead">『魔法使いの約束3周年記念特番』<br>2022.11.15 ON AIR!</p>
+                    <div class="module--box__text">
+                      アプリリリース3周年の記念特番をYouTubeLiveにて生配信いたします。<br>
+                      周年のイベントやアプリ内情報をはじめ、『まほやく』に関するさまざまな内容をお届けします。<br>
+                      ぜひご覧ください！<br>
+                      <br>
+                      『魔法使いの約束 3周年記念特番』<br>
+                      日時：11/15 (火)　20:00 開始予定<br>
+                      出演：田丸篤志さん（アーサー役）、鈴木千尋さん（スノウ役）<br>
+                      　　 三浦勝之さん（ラスティカ役）、帆世雄一さん（レノックス役）<br>
+                      <br>
+                      YouTubeは<a href="https://youtu.be/PLU6csHPCV0" target="_blank">コチラ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- *_*-*_*-*_*-->
+              <div id="twitter" class="modal__info__twitter module--frame">
+                <div class="module--frame__inner">
+                  <p class="module--title size--large">
+                    <picture>
+                      <source srcset="./shared/img/modal/info_game_twitter_sp.png" media="(max-width: 768px)"><img src="./shared/img/modal/info_game_twitter.png" width="397" height="36" alt="">
+                    </picture>
+                  </p>
+                  <!-- ***-->
+                  <div id="twitterContent" class="module--box">
+                    <div class="module--box__text is--soon">Coming Soon</div>
+                  </div>
+                </div>
+              </div>
+              <!-- *_*-*_*-*_*-->
+              <div id="store" class="modal__info__store module--frame">
+                <div class="module--frame__inner">
+                  <p class="module--title"><img src="./shared/img/modal/info_game_store.png" width="138" height="36" alt=""></p>
+                  <!-- ***-->
+                  <div class="module--box">
+                    <p class="module--box__image"><span><a href="https://www.the-chara.com/blog/?p=52424" target="_blank"><img src="./uploads/store1.png" width="100%" alt=""></a></span></p>
+                    <p class="module--box__lead">
+                      『魔法使いの約束 <br class="sp-only">3rd Anniversary Store』<br>
+                      開催！
+                    </p>
+                    <div class="module--box__text">
+                      ・coly more!池袋PARCO店　11/25 (金) 〜12/18 (日)<br>
+                      ・なんばマルイ　7F イベントスペース　12/24 (土) 〜 1/8 (日)<br>
+                      ・博多マルイ　7F イベントスペース　1/14 (土) 〜 1/29 (日)<br>
+                      ・仙台フォーラス　7F 特設会場　2/9 (木) 〜 2/12 (日)<br>
+                      ・セントラルパーク(名古屋)地下街　C－MARKET　2/23 (木・祝)  〜 2/26 (日)<br>
+                      <br>
+                      商品情報、その他詳しい情報は『魔法使いの約束 3rd Anniversary Store』特設サイトをご覧ください。<br>
+                      『魔法使いの約束 3rd Anniversary Store』特設サイトは<a href="https://www.the-chara.com/blog/?p=52424" target="_blank">コチラ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="./shared/js/plugins/jquery-3.4.1.min.js"><¥/script>')
 
-print(html)
+    </script>
+    <script src="./shared/js/plugins/modernizr-custom.js?v=0.01"></script>
+    <script src="./shared/js/libs-min.js?v=2.01"></script>
+    <script src="./shared/js/functions-min.js?v=0.01"></script>
+    <script src="./shared/js/app-min.js?v=3.01"></script>
+  </body>
+</html>
